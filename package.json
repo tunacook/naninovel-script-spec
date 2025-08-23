@@ -4,5 +4,18 @@
   "main": "index.js",
   "repository": "git@github.com:tunacook/naninovel-script-spec.git",
   "author": "tunacook <tunacook0704@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@eslint/js": "^9.34.0",
+    "@types/jest": "^30.0.0",
+    "@types/node": "^24.3.0",
+    "@vercel/ncc": "^0.38.3",
+    "eslint": "^9.34.0",
+    "prettier": "^3.6.2",
+    "ts-jest": "^29.4.1",
+    "typescript-eslint": "^8.40.0"
+  },
+  "dependencies": {
+    "typescript": "^5.9.2"
+  }
 }
