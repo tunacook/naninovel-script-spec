@@ -1,6 +1,7 @@
 # naninovel-script-spec
 
 Naninovelのシナリオスクリプト文法をチェックするライブラリ
+NaninovelのシナリオをチェックするCIにおいて共通で使うのを想定
 
 ## Usage
 
