@@ -1,6 +1,5 @@
 import * as path from "path";
 
-
 const ALLOWED_EXTENSIONS = [".nani"];
 
 // https://naninovel.com/ja/guide/naninovel-scripts
