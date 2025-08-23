@@ -1,3 +1,1 @@
-function run(): void {}
-
-run();
+export * from "./naninovel";
