@@ -1,2 +1,7 @@
 # naninovel-script-spec
-Library representing naninovel script format
+
+Naninovelのシナリオスクリプト文法をチェックするライブラリ
+
+## Usage
+
+yarn add git+ssh://git@github.com/username/repo.git#xxx
