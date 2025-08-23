@@ -1,7 +1,9 @@
 {
   "name": "naninovel-script-spec",
-  "version": "1.0.0",
-  "main": "index.ts",
+  "version": "0.1.3",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": ["dist"],
   "scripts": {
     "build": "ncc build src/index.ts -o dist",
     "lint": "yarn eslint && yarn prettier",
