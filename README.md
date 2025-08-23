@@ -5,4 +5,4 @@ NaninovelのシナリオをチェックするCIにおいて共通で使うのを
 
 ## Usage
 
-yarn add git+ssh://git@github.com/username/repo.git#xxx
+yarn add github:tunacook/naninovel-script-spec#xxx
