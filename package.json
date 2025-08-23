@@ -1,7 +1,15 @@
 {
   "name": "naninovel-script-spec",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "index.ts",
+  "scripts": {
+    "build": "ncc build src/index.ts -o dist",
+    "lint": "yarn eslint && yarn prettier",
+    "lint-fix": "yarn eslint --fix && yarn prettier-fix",
+    "prettier-fix": "prettier --write \"./**/*.{ts,js,vue,css}\"",
+    "prettier": "prettier --check \"./**/*.{ts,js,vue,css}\"",
+    "test": "yarn jest"
+  },
   "repository": "git@github.com:tunacook/naninovel-script-spec.git",
   "author": "tunacook <tunacook0704@gmail.com>",
   "license": "MIT",
