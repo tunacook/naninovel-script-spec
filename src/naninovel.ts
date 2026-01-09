@@ -69,6 +69,22 @@ export function trimRuby(line: string): string {
 }
 
 /**
+ * <br>タグのみをトリミングする
+ * @param line
+ */
+export function trimBrTag(line: string): string {
+  return line.replace(/<br\s*\/?>/gi, "");
+}
+
+/**
+ * <fg="...">...</fg>タグから中身のテキストのみを抽出する
+ * @param line
+ */
+export function trimFgTag(line: string): string {
+  return line.replace(/<fg="[^"]*">(.*?)<\/fg>/g, '$1');
+}
+
+/**
  * Naninovelの構文であるかどうか Naninovel構文であればスキップする
  */
 export function isSkipNaninovelSyntax(line: string): boolean {
