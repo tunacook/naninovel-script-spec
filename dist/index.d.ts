@@ -10,6 +10,16 @@ export declare function trimBracket(line: string): string;
 export declare function trimSquareBrackets(line: string): string;
 export declare function trimRuby(line: string): string;
 /**
+ * <br>タグのみをトリミングする
+ * @param line
+ */
+export declare function trimBrTag(line: string): string;
+/**
+ * <fg="...">...</fg>タグから中身のテキストのみを抽出する
+ * @param line
+ */
+export declare function trimFgTag(line: string): string;
+/**
  * Naninovelの構文であるかどうか Naninovel構文であればスキップする
  */
 export declare function isSkipNaninovelSyntax(line: string): boolean;
