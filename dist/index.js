@@ -33,7 +33,9 @@ __export(index_exports, {
   isExtNani: () => isExtNani,
   isSkipNaninovelSyntax: () => isSkipNaninovelSyntax,
   trimAuthor: () => trimAuthor,
+  trimBrTag: () => trimBrTag,
   trimBracket: () => trimBracket,
+  trimFgTag: () => trimFgTag,
   trimRuby: () => trimRuby,
   trimSquareBrackets: () => trimSquareBrackets
 });
@@ -71,6 +73,12 @@ function trimRuby(line) {
     return `${baseText}${rubyValue}`;
   });
 }
+function trimBrTag(line) {
+  return line.replace(/<br\s*\/?>/gi, "");
+}
+function trimFgTag(line) {
+  return line.replace(/<fg="[^"]*">(.*?)<\/fg>/g, "$1");
+}
 function isSkipNaninovelSyntax(line) {
   if (isCommandLine(line)) return true;
   if (isCommentLine(line)) return true;
@@ -81,7 +89,9 @@ function isSkipNaninovelSyntax(line) {
   isExtNani,
   isSkipNaninovelSyntax,
   trimAuthor,
+  trimBrTag,
   trimBracket,
+  trimFgTag,
   trimRuby,
   trimSquareBrackets
 });
