@@ -9,7 +9,7 @@
     "prepare": "npm run build",
     "build": "yarn clean && yarn build:js && yarn build:types",
     "build:js": "esbuild src/index.ts --bundle --platform=node --format=cjs --outfile=dist/index.js",
-    "build:types": "dts-bundle-generator --no-check --no-external -o dist/index.d.ts src/index.ts",
+    "build:types": "dts-bundle-generator --no-check -o dist/index.d.ts src/index.ts",
     "lint": "yarn eslint && yarn prettier",
     "lint-fix": "yarn eslint --fix && yarn prettier-fix",
     "prettier-fix": "prettier --write \"./**/*.{ts,js,vue,css}\"",
