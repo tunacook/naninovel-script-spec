@@ -67,13 +67,15 @@ describe("trimFgTag test", () => {
     expect(res).toBe("目眩");
   });
 
-  test('複数のfgタグをトリミングする', async () => {
-    const res = trimFgTag('テキスト<fg="color1">重要</fg>な<fg="color2">部分</fg>です');
+  test("複数のfgタグをトリミングする", async () => {
+    const res = trimFgTag(
+      'テキスト<fg="color1">重要</fg>な<fg="color2">部分</fg>です',
+    );
     expect(res).toBe("テキスト重要な部分です");
   });
 
-  test('fgタグが含まれていない場合はそのまま返す', async () => {
-    const res = trimFgTag('普通のテキストです');
+  test("fgタグが含まれていない場合はそのまま返す", async () => {
+    const res = trimFgTag("普通のテキストです");
     expect(res).toBe("普通のテキストです");
   });
 });
