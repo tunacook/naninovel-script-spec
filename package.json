@@ -26,6 +26,7 @@
     "dts-bundle-generator": "^9.5.1",
     "esbuild": "^0.28.2",
     "eslint": "^10.13.0",
+    "globals": "^17.14.0",
     "jest": "^30.5.2",
     "prettier": "^3.9.10",
     "rimraf": "^6.1.3",
