@@ -81,7 +81,7 @@ export function trimBrTag(line: string): string {
  * @param line
  */
 export function trimFgTag(line: string): string {
-  return line.replace(/<fg="[^"]*">(.*?)<\/fg>/g, '$1');
+  return line.replace(/<fg="[^"]*">(.*?)<\/fg>/g, "$1");
 }
 
 /**
