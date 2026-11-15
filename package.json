@@ -19,6 +19,10 @@
   "repository": "git@github.com:tunacook/naninovel-script-spec.git",
   "author": "tunacook <tunacook0704@gmail.com>",
   "license": "MIT",
+  "resolutions": {
+    "**/minimatch": "^11.0.1",
+    "**/glob": "^14.0.2"
+  },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
     "@types/jest": "^30.0.0",
